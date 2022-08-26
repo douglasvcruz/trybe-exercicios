@@ -43,3 +43,6 @@ div:nth-of-type(5) > h3 {
     color: rgb(233, 182, 16);
 }
 
+div:nth-child(odd) h3 {
+    font-style: italic;
+}
