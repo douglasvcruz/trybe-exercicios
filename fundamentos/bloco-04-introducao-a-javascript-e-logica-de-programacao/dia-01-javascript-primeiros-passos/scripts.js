@@ -6,3 +6,5 @@ birthYear = "2030";
 console.log(birthYear)
 birthCity = "error";
 console.log(birthCity)
+
+/* Mudar uma constante não é possível e por isso aparece a mensagem de erro */
