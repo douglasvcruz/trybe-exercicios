@@ -1,0 +1,2 @@
+
+let candidata = 'aprovada';
