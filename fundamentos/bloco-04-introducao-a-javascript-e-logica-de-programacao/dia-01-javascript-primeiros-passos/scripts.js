@@ -1,1 +1,2 @@
-const myName = "Douglas"
+const myName = "Douglas";
+const birthCity = "Canoas";
