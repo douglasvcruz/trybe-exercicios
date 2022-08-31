@@ -49,7 +49,7 @@ for(i in numbers) {
 
 console.log(maior) */
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let resultado = 0;
 
 for (i in numbers) {
@@ -62,5 +62,15 @@ if(resultado === 0) {
     console.log("nenhum valor ímpar encontrado");
 } else {
     console.log(resultado);
+} */
+
+let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+let menor = numbers[0];
+
+for(i in numbers) {
+    if(numbers[i] < menor) {
+        menor = numbers[i];
+    }
 }
 
+console.log(menor)
