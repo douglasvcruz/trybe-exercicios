@@ -64,7 +64,7 @@ if(resultado === 0) {
     console.log(resultado);
 } */
 
-let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
+/* let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 let menor = numbers[0];
 
 for(i in numbers) {
@@ -73,4 +73,12 @@ for(i in numbers) {
     }
 }
 
-console.log(menor)
+console.log(menor) */
+
+let numbers = [];
+
+for(i = 1; i <= 25; i += 1) {
+    numbers.push(i)
+}
+
+console.log(numbers)
