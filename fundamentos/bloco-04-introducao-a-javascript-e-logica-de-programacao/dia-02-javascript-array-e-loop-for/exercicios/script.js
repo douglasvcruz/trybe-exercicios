@@ -75,10 +75,18 @@ for(i in numbers) {
 
 console.log(menor) */
 
+/* let numbers = [];
+
+for(i = 1; i <= 25; i += 1) {
+    numbers.push(i);
+}
+
+console.log(numbers); */
+
 let numbers = [];
 
 for(i = 1; i <= 25; i += 1) {
-    numbers.push(i)
+    numbers.push(i / 2);
 }
 
-console.log(numbers)
+console.log(numbers);
