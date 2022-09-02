@@ -37,3 +37,21 @@ for (let i = 0; i < array.length; i += 1) {
 
 console.log(maior);
 console.log(menor);
+
+// 4º Exercício
+
+let maiorNum = 0;
+
+for (let number = 2; number <= 50; number += 1) {
+  let isPrime = true;
+  for (let number2 = 2; number2 < number; number2 += 1) {
+    if (number % number2 === 0) {
+      isPrime = false;
+    }
+  }
+  if (isPrime === true) {
+    maiorNum = number;
+  }
+}
+
+console.log(maiorNum);
