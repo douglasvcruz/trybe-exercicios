@@ -22,20 +22,42 @@
 // }
 
 // Bonus 3
+// let n = 5;
+// let asterisco = '*';
+// let linhas = '';
+// let espace = n;
+
+// for (let i = 0; i <= n; i += 1) {
+//   for (let i2 = 0; i2 < n; i2 += 1) {
+//     if (i2 < espace) {
+//       linhas = linhas + ' ';
+//     } else {
+//       linhas = linhas + asterisco;
+//     }
+//   }
+//   console.log(linhas);
+//   linhas = '';
+//   espace -= 1;
+// }
+
+// Bonus 4
 let n = 5;
 let asterisco = '*';
 let linhas = '';
-let espace = n;
+let meio = (n + 1) / 2
+let right = meio
+let left = meio
 
-for (let i = 0; i <= n; i += 1) {
-  for (let i2 = 0; i2 < n; i2 += 1) {
-    if (i2 < espace) {
-      linhas = linhas + ' ';
-    } else {
+for (let i = 0; i <= meio; i += 1) {
+  for (let i2 = 0; i2 <= n; i2 += 1) {
+    if (i2 > left && i2 < right) {
       linhas = linhas + asterisco;
+    } else {
+      linhas = linhas + ' ';
     }
   }
   console.log(linhas);
   linhas = '';
-  espace -= 1;
+  right += 1;
+  left -= 1;
 }
