@@ -41,23 +41,44 @@
 // }
 
 // Bonus 4
-let n = 5;
-let asterisco = '*';
-let linhas = '';
-let meio = (n + 1) / 2
-let right = meio
-let left = meio
+// let n = 5;
+// let asterisco = '*';
+// let linhas = '';
+// let meio = (n + 1) / 2
+// let right = meio
+// let left = meio
 
-for (let i = 0; i <= meio; i += 1) {
-  for (let i2 = 0; i2 <= n; i2 += 1) {
-    if (i2 > left && i2 < right) {
-      linhas = linhas + asterisco;
+// for (let i = 0; i <= meio; i += 1) {
+//   for (let i2 = 0; i2 <= n; i2 += 1) {
+//     if (i2 > left && i2 < right) {
+//       linhas = linhas + asterisco;
+//     } else {
+//       linhas = linhas + ' ';
+//     }
+//   }
+//   console.log(linhas);
+//   linhas = '';
+//   right += 1;
+//   left -= 1;
+// }
+
+// Bonus 5
+let n = 7;
+let meio = (n + 1) / 2;
+let right = meio;
+let left = meio;
+let asterisco = '*';
+
+for (let i = 1; i <= meio; i += 1) {
+  let linhas = '';
+  for (let i2 = 1; i2 <= n; i2 += 1) {
+    if (i2 == left || i2 == right || i == meio) {
+      linhas += asterisco;
     } else {
-      linhas = linhas + ' ';
+      linhas += ' ';
     }
   }
-  console.log(linhas);
-  linhas = '';
-  right += 1;
   left -= 1;
+  right += 1;
+  console.log(linhas);
 }
