@@ -63,22 +63,38 @@
 // }
 
 // Bonus 5
-let n = 7;
-let meio = (n + 1) / 2;
-let right = meio;
-let left = meio;
-let asterisco = '*';
+// let n = 7;
+// let meio = (n + 1) / 2;
+// let right = meio;
+// let left = meio;
+// let asterisco = '*';
 
-for (let i = 1; i <= meio; i += 1) {
-  let linhas = '';
-  for (let i2 = 1; i2 <= n; i2 += 1) {
-    if (i2 == left || i2 == right || i == meio) {
-      linhas += asterisco;
-    } else {
-      linhas += ' ';
-    }
+// for (let i = 1; i <= meio; i += 1) {
+//   let linhas = '';
+//   for (let i2 = 1; i2 <= n; i2 += 1) {
+//     if (i2 == left || i2 == right || i == meio) {
+//       linhas += asterisco;
+//     } else {
+//       linhas += ' ';
+//     }
+//   }
+//   left -= 1;
+//   right += 1;
+//   console.log(linhas);
+// }
+
+// Bonus 6
+let number = 97;
+let count = 0;
+
+for (let i = 2; i <= number; i++) {
+  if (number % i == 0) {
+    count += 1
   }
-  left -= 1;
-  right += 1;
-  console.log(linhas);
+}
+
+if (count == 1) {
+  console.log('É primo');
+} else {
+  console.log('Não é primo');
 }
