@@ -17,6 +17,9 @@ for (let i in info) {
 }
 
 // 4º 
+for (let i in info) {
+  console.log(info[i]);
+}
 
 // 5º 
 
