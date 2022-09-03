@@ -1,3 +1,4 @@
+// 1.1
 let name = 'Marta';
 let lastName = 'Silva';
 let age = 34;
@@ -14,3 +15,7 @@ let player = {
 };
 
 console.log(player);
+
+// 1.2
+console.log('A jogadora ' + player.name + ' ' + player.lastName + ' tem ' + player.age + ' anos de idade.');
+
