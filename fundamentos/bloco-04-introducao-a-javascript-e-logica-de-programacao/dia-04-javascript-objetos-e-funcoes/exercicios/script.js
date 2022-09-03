@@ -8,8 +8,8 @@ let info = {
 console.log('Bem-vinda, ' + info.personagem);
 
 // 2º 
-info.recorrente = 'sim';
-console.log(info)
+info.recorrente = 'Sim';
+// console.log(info)
 
 // 3º 
 for (let i in info) {
@@ -22,7 +22,21 @@ for (let i in info) {
 }
 
 // 5º 
+let info2 = {
+  personagem: 'Tio Patinhas',
+  origem: 'Christmas on Bear Mountain, Dell’s Four Color Comics #178',
+  nota: 'O último MacPatinhas',
+  recorrente: 'Sim',
+};
 
+for (let i in info2) {
+    if (info[i] === 'Sim' && info2[i] === 'Sim') {
+    console.log('Ambos recorrentes');
+    } else {
+      console.log(info[i] + ' e ' + info2[i])
+    }
+  }
+  
 // 6º 
 
 // 7º 
