@@ -22,3 +22,8 @@ console.log('A jogadora ' + player.name + ' ' + player.lastName + ' tem ' + play
 // 1.3
 player.bestInTheWorld = [2006, 2007, 2008, 2009, 2010, 2018];
 console.log(player);
+
+// 1.4
+console.log('A jogadora ' + player.name + ' ' + player.lastName + ' foi eleita a melhor do mundo por ' + player.bestInTheWorld.length + ' vezes.');
+
+// 1.5
