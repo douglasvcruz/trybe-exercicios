@@ -150,3 +150,15 @@ function maisRepetido(numeros) {
 }
 
 console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
+
+// 14º
+function soma(numero) {
+  let somatorio = 0;
+
+  for (let i = 1; i <= numero; i += 1) {
+    somatorio += i;
+  }
+  return somatorio;
+}
+
+console.log(soma(5));
