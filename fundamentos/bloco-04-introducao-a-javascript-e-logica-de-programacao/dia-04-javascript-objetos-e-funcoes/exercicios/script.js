@@ -93,7 +93,7 @@ console.log(verificaPalindrome2('desenvolvimento'));
 // 10º 
 function test(array) {
   let maior = 0;
-  for (i in array) {
+  for (let i in array) {
     if (array[maior] < array[i]) {
       maior = i;
     }
@@ -105,7 +105,7 @@ console.log(test([2, 3, 6, 7, 10, 1]));
 // 11º 
 function test2(array) {
   let menor = 0;
-  for (i in array) {
+  for (let i in array) {
     if (array[menor] > array[i]) {
       menor = i;
     }
@@ -113,3 +113,15 @@ function test2(array) {
   return menor;
 }
 console.log(test2([2, 4, 6, 7, 10, 0, -3]));
+
+// 12º 
+function caracteres(array) {
+  let nome = array[0]
+  for (let i in array) {
+    if (nome.length < array[i].length) {
+      nome = array[i];
+    }
+  }
+  return nome;
+}
+console.log(caracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
