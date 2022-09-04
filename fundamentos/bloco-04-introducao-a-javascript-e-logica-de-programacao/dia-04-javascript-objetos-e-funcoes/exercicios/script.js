@@ -91,7 +91,15 @@ console.log(verificaPalindrome2('arara'));
 console.log(verificaPalindrome2('desenvolvimento'));
 
 // 10º 
-
-
+function test(array) {
+  let maior = 0;
+  for (i in array) {
+    if (array[maior] < array[i]) {
+      maior = i;
+    }
+  }
+  return maior;
+}
+console.log(test([2, 3, 6, 7, 10, 1]));
 
 // 11º 
