@@ -130,3 +130,12 @@ let ultimo = moradoresBlocoDois[moradoresBlocoDois.length - 1];
 
 console.log('O morador do bloco 2 de nome ' + ultimo.nome + ' ' + ultimo.sobrenome +
  ' mora no ' + ultimo.andar + '° andar, apartamento ' + ultimo.apartamento);
+
+//  Bonus 5
+for (let i in moradores.blocoDois) {
+  console.log(moradores.blocoUm[i].nome + ' ' + moradores.blocoUm[i].sobrenome);
+}
+
+for (let i in moradores.blocoDois) {
+  console.log(moradores.blocoDois[i].nome + ' ' + moradores.blocoDois[i].sobrenome);
+}
