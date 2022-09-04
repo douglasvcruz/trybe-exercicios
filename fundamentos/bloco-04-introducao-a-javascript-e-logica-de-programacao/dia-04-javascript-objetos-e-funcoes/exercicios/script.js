@@ -30,13 +30,13 @@ let info2 = {
 };
 
 for (let i in info2) {
-    if (info[i] === 'Sim' && info2[i] === 'Sim') {
+  if (info[i] === 'Sim' && info2[i] === 'Sim') {
     console.log('Ambos recorrentes');
-    } else {
-      console.log(info[i] + ' e ' + info2[i])
-    }
+  } else {
+    console.log(info[i] + ' e ' + info2[i])
   }
-  
+}
+
 // 6º 
 let leitor = {
   nome: 'Julia',
@@ -68,7 +68,30 @@ console.log(leitor.livrosFavoritos[1]);
 console.log(leitor.nome + ' tem ' + leitor.livrosFavoritos.length + ' livros favoritos')
 
 // 9º 
+function verificaPalindrome(palavra) {
+  for (let i in palavra) {
+    if (palavra[i] != palavra[palavra.length - 1 - i]) {
+      return false;
+    }
+    return true;
+  }
+}
+console.log(verificaPalindrome('arara'));
+console.log(verificaPalindrome('desenvolvimento'));
+
+function verificaPalindrome2(palavra) {
+  let reverso = palavra.split('').reverse().join('');
+  if (reverso === palavra) {
+    return true;
+  }
+  return false;
+}
+
+console.log(verificaPalindrome2('arara'));
+console.log(verificaPalindrome2('desenvolvimento'));
 
 // 10º 
+
+
 
 // 11º 
