@@ -31,3 +31,23 @@ function romanos(numero) {
 
 console.log(romanos('IVXLCDM'));
 console.log(romanos('MDCLXVI'));
+
+let vector = [[1, 2], [3, 4, 5, 6], [7, 8, 9, 10]];
+
+function arrayOfNumbers(vector) {
+  const resultado = [];
+
+  for (let i in vector) {
+    const numbers = vector[i];
+
+    for (let i2 in numbers) {
+      const push = numbers[i2];
+      if (push % 2 === 0) {
+        resultado.push(push);
+      }
+    }
+  }
+  return resultado;
+}
+
+console.log(arrayOfNumbers(vector));
