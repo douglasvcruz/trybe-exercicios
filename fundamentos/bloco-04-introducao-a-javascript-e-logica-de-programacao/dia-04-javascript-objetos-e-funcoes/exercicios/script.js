@@ -162,3 +162,43 @@ function soma(numero) {
 }
 
 console.log(soma(5));
+
+// 15º
+function verificaFimPalavra(word, ending) {
+  word = word.split('');
+  ending = ending.split('');
+  let resultado = true;
+
+  for (let index = 0; index < ending.length; index += 1) {
+    if (word[word.length - ending.length + index] != ending[index]) {
+      resultado = false;
+    }
+  }
+
+  return resultado;
+}
+
+console.log(verificaFimPalavra('trybe', 'be'));
+console.log(verificaFimPalavra('joaofernando', 'fernan')); 
+
+// Outra forma de resolver:
+
+// function verificaFimPalavra(palavra, fimPalavra) {
+//   let inversoPalavra = palavra.split('').reverse().join('');
+//   let inversoFimPalavra = fimPalavra.split('').reverse().join('');
+//   let result;
+
+//   for (let index = 0; index < inversoFimPalavra.length; index += 1) {
+//     if (inversoPalavra[index] !== inversoFimPalavra[index]) {
+//       result = false;
+//       break; // O "break" serve para encerrar o loop.
+//     } else {
+//       result = true;
+//     }
+//   }
+  
+//   return result;
+// }
+
+// console.log(verificaFimPalavra('trybe', 'be')); //true
+// console.log(verificaFimPalavra('joaofernando', 'fernan')); //false
