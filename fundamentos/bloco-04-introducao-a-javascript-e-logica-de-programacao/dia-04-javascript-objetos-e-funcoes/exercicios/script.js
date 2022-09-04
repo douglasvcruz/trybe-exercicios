@@ -125,3 +125,28 @@ function caracteres(array) {
   return nome;
 }
 console.log(caracteres(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']));
+
+// 13º
+function maisRepetido(numeros) {
+  let repetido = 0;
+  let count = 0;
+  let valor = 0;
+
+  for (let i in numeros) {
+    let verifica = numeros[i];
+    for (let i2 in numeros) {
+      if (verifica === numeros[i2]) {
+        count += 1;
+      }
+    }
+    if (count > repetido) {
+      repetido = count;
+      valor = i;
+    }
+    count = 0;
+  }
+
+  return numeros[valor];
+}
+
+console.log(maisRepetido([2, 3, 2, 5, 8, 2, 3]));
