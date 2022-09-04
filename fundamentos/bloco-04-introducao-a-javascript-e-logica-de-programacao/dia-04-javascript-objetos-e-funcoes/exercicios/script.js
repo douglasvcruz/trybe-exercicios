@@ -103,3 +103,13 @@ function test(array) {
 console.log(test([2, 3, 6, 7, 10, 1]));
 
 // 11º 
+function test2(array) {
+  let menor = 0;
+  for (i in array) {
+    if (array[menor] > array[i]) {
+      menor = i;
+    }
+  }
+  return menor;
+}
+console.log(test2([2, 4, 6, 7, 10, 0, -3]));
