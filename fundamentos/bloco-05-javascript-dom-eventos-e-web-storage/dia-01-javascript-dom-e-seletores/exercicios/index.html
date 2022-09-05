@@ -78,6 +78,15 @@
 
       todoParagrafo();
 
+      function conteudoP () {
+        let tudo = document.getElementsByTagName("p");
+        for (i = 0; i < tudo.length; i += 1) {
+          console.log(tudo[i].innerHTML);
+        }
+      }
+
+      conteudoP();
+
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
         - document.getElementById()
