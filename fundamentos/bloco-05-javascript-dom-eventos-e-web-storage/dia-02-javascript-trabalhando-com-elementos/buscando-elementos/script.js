@@ -9,3 +9,5 @@ texto.innerHTML = 'lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum lorem Ipsum l
 const primeiroFilho = pai.firstElementChild
 
 const primeiroFilho2 = elementoOndeVoceEsta.previousElementSibling
+
+const textElement = elementoOndeVoceEsta.nextSibling;
