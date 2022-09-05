@@ -12,9 +12,12 @@
       const paragraph = document.getElementById("paragraph");
       paragraph.style.color = "red";
       const subtitle = document.getElementById("subtitle").innerText = 'O melhor';
-      const para = document.getElementsByClassName('paragrafo');
-      para[0].style.fontSize = "10px";
-      para[0].style.color = "green";
+      const para = document.getElementsByClassName('paragrafo')[0];
+      para.style.fontSize = "10px";
+      para.style.color = "green";
+      const sub = document.getElementsByTagName('h4')[0];
+      sub.style.color = "blueviolet";
+
     </script>
   </body>
 </html>
