@@ -43,33 +43,40 @@
     </main>
     <script>
 
-      function mudarFrase (frase) {
-        let paragrafo = document.getElementsByTagName("p")[1]
+      function mudarFrase () {
+        let paragrafo = document.getElementsByTagName("p")[1];
         paragrafo.innerText = 'Me vejo trabalhando com programação';
       }
 
       mudarFrase();
 
-      function mudarCor (bloco) {
+      function mudarCor () {
         let blockColor = document.getElementsByClassName("main-content")[0];
         blockColor.style.backgroundColor = 'rgb(76,164,109)';
       }
 
       mudarCor();
 
-      function mudarCor2 (bloco) {
+      function mudarCor2 () {
         let blockColor2 = document.getElementsByClassName("center-content")[0];
         blockColor2.style.backgroundColor = 'white';
       }
 
       mudarCor2();
 
-      function corrija(h1) {
+      function corrija() {
         let correcao = document.getElementsByClassName("title")[0];
         correcao.innerText = 'Exercício 5.1 - JavaScript';
       }
 
       corrija();
+
+      function todoParagrafo () {
+        let maiusculo = document.getElementsByTagName("p")[0];
+        maiusculo.innerHTML = maiusculo.innerHTML.toUpperCase();
+      }
+
+      todoParagrafo();
 
         /*
         Aqui você vai modificar os elementos já existentes utilizando apenas as funções:
