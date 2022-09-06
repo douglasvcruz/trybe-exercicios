@@ -14,11 +14,15 @@
 
       const main = document.createElement('main');
       main.className = 'main-content';
-      document.body.appendChild(elementMain);
+      document.body.appendChild(main);
 
       const mainFilho = document.createElement('section');
-      main.className = 'center-content';
-      main.appendChild(elementMain);
+      mainFilho.className = 'center-content';
+      main.appendChild(mainFilho);
+
+      const paragrafo = document.createElement('p');
+      paragrafo.innerHTML = 'texto test';
+      mainFilho.appendChild(paragrafo);
 
     </script>
   </body>
