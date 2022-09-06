@@ -37,6 +37,16 @@
       imagem.className = 'small-image';
       mainFilho2.appendChild(imagem);
 
+      const ul = document.createElement('ul');
+      mainFilho3.appendChild(ul);
+
+      const lista = ['Um', 'Dois', 'Três', 'Quatro', 'Cinco', 'Seis', 'Sete', 'Oito', 'Nove', 'Dez']
+      for (let i in lista) {
+        const li = document.createElement('li');
+        li.innerHTML = lista[i];
+        ul.appendChild(li)
+      }
+
     </script>
   </body>
 </html>
