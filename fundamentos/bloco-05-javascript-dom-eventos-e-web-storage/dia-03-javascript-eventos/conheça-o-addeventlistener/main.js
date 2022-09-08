@@ -30,6 +30,10 @@ myWebpage.addEventListener('mouseover', function(event) {
   event.target.style.color = 'blueviolet';
 });
 
+myWebpage.addEventListener('mouseout', function(event) {
+  event.target.style.color = 'unset';
+});
+
 function resetText(event) {
   // O Event é passado como um parâmetro para a função.
   event.target.innerText = 'Opção reiniciada';
