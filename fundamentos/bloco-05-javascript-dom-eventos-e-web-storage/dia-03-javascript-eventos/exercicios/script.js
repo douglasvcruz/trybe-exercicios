@@ -65,3 +65,13 @@ function mudarCor() {
 }
 
 mudarCor()
+
+function friday(name) {
+  const container = document.querySelector('.buttons-container');
+  const bottom = document.createElement('button');
+  bottom.id = 'btn-friday';
+  bottom.innerHTML = name;
+  container.appendChild(bottom);
+}
+
+friday('Friday')
