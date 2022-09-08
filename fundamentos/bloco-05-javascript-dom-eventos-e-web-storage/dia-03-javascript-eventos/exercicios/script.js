@@ -38,3 +38,13 @@ function dias() {
 }
 
 dias()
+
+function bottom(feriados) {
+  const container = document.querySelector('.buttons-container');
+  const bottom = document.createElement('button');
+  bottom.id = 'btn-holiday';
+  bottom.innerHTML = feriados;
+  container.appendChild(bottom);
+}
+
+bottom('Feriados')
