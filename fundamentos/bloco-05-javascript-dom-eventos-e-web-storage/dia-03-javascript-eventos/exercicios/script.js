@@ -115,10 +115,20 @@ aumentar();
 diminuir();
 
 function personalizar(cozinhar) {
-  const tasks = document.querySelector('.my-tasks')
-  const span = document.createElement('span')
-  span.innerHTML = cozinhar
-  tasks.appendChild(span)
+  const tasks = document.querySelector('.my-tasks');
+  const span = document.createElement('span');
+  span.innerHTML = cozinhar;
+  tasks.appendChild(span);
 }
 
 personalizar('cozinhar');
+
+function cor(azul) {
+  const tasks = document.querySelector('.my-tasks');
+  const div = document.createElement('div');
+  div.className = 'task';
+  div.style.backgroundColor = azul;
+  tasks.appendChild(div);
+}
+
+cor('green');
