@@ -146,3 +146,22 @@ function selecionar() {
 }
 
 selecionar();
+
+function corTarefa() {
+  let selected = document.getElementsByClassName('task selected');
+  let days = document.querySelector('#days');
+  let div = document.querySelector('.task');
+  let divColor = div.style.backgroundColor;
+  
+  days.addEventListener('click', function(event){
+    let eventColor = event.target.style.color;
+
+    if (eventColor !== divColor) {
+      event.target.style.color = selected[0].style.backgroundColor;
+    } else {
+      event.target.style.color = 'rgb(119,119,119)';
+    }
+  });
+}
+
+corTarefa();
