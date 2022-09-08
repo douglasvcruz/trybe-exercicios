@@ -48,3 +48,20 @@ function bottom(feriados) {
 }
 
 bottom('Feriados')
+
+function mudarCor() {
+  let bottom = document.querySelector('#btn-holiday');
+  let holiday = document.querySelectorAll('.holiday')
+
+  bottom.addEventListener('click', function() {
+    for (let index = 0; index < holiday.length; index += 1) {
+      if (holiday[index].style.backgroundColor === 'white') {
+        holiday[index].style.backgroundColor = 'rgb(238,238,238)';
+      } else {
+        holiday[index].style.backgroundColor = 'white';
+      }
+    }
+  });
+}
+
+mudarCor()
