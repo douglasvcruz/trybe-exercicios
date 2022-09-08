@@ -132,3 +132,17 @@ function cor(azul) {
 }
 
 cor('green');
+
+function selecionar() {
+  const div = document.querySelector('.task');
+
+  div.addEventListener('click', function(event) {
+    if (div.className !== 'task selected') {
+      event.target.className = 'task selected';
+    } else {
+      event.target.className = 'task';
+    }
+  });
+}
+
+selecionar();
