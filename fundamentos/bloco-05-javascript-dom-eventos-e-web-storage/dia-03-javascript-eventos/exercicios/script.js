@@ -53,7 +53,7 @@ function mudarCor() {
   let bottom = document.querySelector('#btn-holiday');
   let holiday = document.querySelectorAll('.holiday')
 
-  bottom.addEventListener('click', function() {
+  bottom.addEventListener('click', function () {
     for (let index = 0; index < holiday.length; index += 1) {
       if (holiday[index].style.backgroundColor === 'white') {
         holiday[index].style.backgroundColor = 'rgb(238,238,238)';
@@ -75,3 +75,22 @@ function friday(name) {
 }
 
 friday('Friday')
+
+
+function fridayText(fridays) {
+  const bottom = document.querySelector('#btn-friday');
+  const friday = document.querySelectorAll('.friday');
+
+  bottom.addEventListener('click', function () {
+    for (let i = 0; i < friday.length; i += 1) {
+      if (friday[i].innerHTML !== 'Sextou') {
+        friday[i].innerHTML = 'Sextou';
+      } else {
+        friday[i].innerHTML = fridays[i];
+      }
+    }
+  });
+}
+
+let decemberFridays = [ 4, 11, 18, 25 ];
+fridayText(decemberFridays);
