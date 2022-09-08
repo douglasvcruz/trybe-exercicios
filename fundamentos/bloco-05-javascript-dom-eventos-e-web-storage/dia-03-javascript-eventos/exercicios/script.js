@@ -92,5 +92,24 @@ function fridayText(fridays) {
   });
 }
 
-let decemberFridays = [ 4, 11, 18, 25 ];
+let decemberFridays = [4, 11, 18, 25];
 fridayText(decemberFridays);
+
+function aumentar() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseover', function (event) {
+      event.target.style.fontSize = '30px';
+});
+}
+
+function diminuir() {
+  const days = document.querySelector('#days');
+
+  days.addEventListener('mouseout', function (event) {
+      event.target.style.fontSize = '20px';
+  });
+}
+
+aumentar();
+diminuir();
