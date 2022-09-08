@@ -99,15 +99,15 @@ function aumentar() {
   const days = document.querySelector('#days');
 
   days.addEventListener('mouseover', function (event) {
-      event.target.style.fontSize = '30px';
-});
+    event.target.style.fontSize = '30px';
+  });
 }
 
 function diminuir() {
   const days = document.querySelector('#days');
 
   days.addEventListener('mouseout', function (event) {
-      event.target.style.fontSize = '20px';
+    event.target.style.fontSize = '20px';
   });
 }
 
@@ -136,7 +136,7 @@ cor('green');
 function selecionar() {
   const div = document.querySelector('.task');
 
-  div.addEventListener('click', function(event) {
+  div.addEventListener('click', function (event) {
     if (div.className !== 'task selected') {
       event.target.className = 'task selected';
     } else {
@@ -152,8 +152,8 @@ function corTarefa() {
   let days = document.querySelector('#days');
   let div = document.querySelector('.task');
   let divColor = div.style.backgroundColor;
-  
-  days.addEventListener('click', function(event){
+
+  days.addEventListener('click', function (event) {
     let eventColor = event.target.style.color;
 
     if (eventColor !== divColor) {
@@ -165,3 +165,33 @@ function corTarefa() {
 }
 
 corTarefa();
+
+function compromisso() {
+  const input = document.querySelector('#task-input');
+  const adicionar = document.querySelector('#btn-add');
+  const tasksList = document.querySelector('.task-list');
+
+  adicionar.addEventListener('click', function() {
+    if (input.value.length > 0) {
+      const li = document.createElement('li');
+      li.innerText = input.value;
+
+      tasksList.appendChild(li);
+      input.value = '';
+    } else {
+      alert('Error!');
+    }
+  });
+
+  input.addEventListener('keyup', function(event) {
+    if (event.key === 'Enter' && input.value.length > 0) {
+      const li = document.createElement('li');
+      li.innerText = input.value;
+
+      tasksList.appendChild(li);
+      input.value = '';
+    }
+  });
+}
+
+compromisso();
