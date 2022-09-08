@@ -113,3 +113,12 @@ function diminuir() {
 
 aumentar();
 diminuir();
+
+function personalizar(cozinhar) {
+  const tasks = document.querySelector('.my-tasks')
+  const span = document.createElement('span')
+  span.innerHTML = cozinhar
+  tasks.appendChild(span)
+}
+
+personalizar('cozinhar');
