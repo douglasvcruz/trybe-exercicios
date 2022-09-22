@@ -103,12 +103,14 @@ body {
   }
 
   #navigation {
-    width: 92%;
-    margin:  85px 0 0 10px;
+    width: auto;
+    border: 10px solid white;
+    margin:  75px 0 0 0;
   }
 
   #navigation ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   #navigation li a {
@@ -136,12 +138,14 @@ body {
   }
 
   #navigation {
-    width: 94%;
-    margin:  85px 0 0 10px;
+    width: auto;
+    border: 10px solid white;
+    margin:  75px 0 0 0;
   }
 
   #navigation ul {
-    display: block;
+    display: flex;
+    flex-direction: column;
   }
 
   #navigation li a {
