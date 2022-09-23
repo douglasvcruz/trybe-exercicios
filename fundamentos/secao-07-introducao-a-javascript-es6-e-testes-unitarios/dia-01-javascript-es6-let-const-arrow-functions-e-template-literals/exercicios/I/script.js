@@ -28,3 +28,8 @@ const sortOddsAndEvens = (numbers) => {
 };
 
 console.log(`Os números ${sortOddsAndEvens(oddsAndEvens)} se encontram ordenados de forma crescente!`); // será necessário alterar essa linha 😉
+
+oddsAndEvens.sort((a, b) => a - b);
+console.log(`Os números ${oddsAndEvens} se encontram ordenados de forma crescente!`);
+
+console.log(`Os números ${oddsAndEvens.sort((a, b) => a - b)} se encontram ordenados de forma crescente!`);
