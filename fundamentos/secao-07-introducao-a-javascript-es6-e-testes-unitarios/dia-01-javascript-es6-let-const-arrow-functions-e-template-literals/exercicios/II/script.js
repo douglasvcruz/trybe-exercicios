@@ -36,3 +36,32 @@ const contador = document.getElementById('count');
 let contagem = 0;
 
 button.addEventListener('click', () => contador.innerHTML = contagem += 1);
+
+const substituaX = (nome) => {
+  const frase = 'Tryber x aqui!'
+  const x = frase.split(' ')
+  for (let i = 0; i < x.length; i += 1) {
+    if (x[i] === 'x') {
+      x[i] = nome; 
+    }
+  }
+
+  return x.join(' ');
+}
+console.log(substituaX('Douglas'));
+
+const minhasSkills = (test) => {
+  const skills = ['Dom', 'CSS', 'HTML'];
+  let resultado = `${test}
+
+  Minhas três principais habilidades são:
+  `;
+
+  for (let i = 0; i < skills.length; i += 1) {
+    resultado = `${resultado}
+    - ${skills[i]}`
+  }
+return resultado;
+};
+
+console.log(minhasSkills(substituaX('Douglas')));
