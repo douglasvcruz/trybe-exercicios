@@ -4,14 +4,14 @@ const techList = (arrayTechnologies, name) => {
   const sortedArray = arrayTechnologies.sort();
   const technologyList = [];
 
-  for (let index = 0; index < sortedArray.length; index += 1) {
+  sortedArray.forEach((item) => {
     technologyList.push({
-      tech: sortedArray[index],
+      tech: item,
       name: name,
     });
-  }
+  });
 
-  return technologyList;
+return technologyList;
 };
 
 module.exports = techList;
