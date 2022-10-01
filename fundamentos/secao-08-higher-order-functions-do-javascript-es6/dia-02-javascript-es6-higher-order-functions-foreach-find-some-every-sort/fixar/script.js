@@ -32,3 +32,21 @@ const musicas = [
 const findMusic = (id) => musicas.find((musica) => (musica.id == id));
 
 console.log(findMusic('31031685'));
+
+const names1 = ['Mateus', 'José', 'Ana', 'Cláudia', 'Bruna'];
+
+const hasName = (arr, name) => arr.some((names) => names === name);
+
+console.log(hasName(names1, 'Ana'));
+
+const people = [
+  { name: 'Mateus', age: 18 },
+  { name: 'José', age: 16 },
+  { name: 'Ana', age: 23 },
+  { name: 'Cláudia', age: 20 },
+  { name: 'Bruna', age: 19 },
+];
+
+const verifyAges = (arr, minimumAge) => arr.every((person) => person.age >= minimumAge);
+
+console.log(verifyAges(people, 18));
