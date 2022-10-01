@@ -13,3 +13,12 @@ const emailGenerator = (nomeCompleto) => {
 }
 
 console.log(newEmployees(emailGenerator));
+
+const oMesmo = (number, numberSort) => number === numberSort;
+
+const sorteio = (number, func) => {
+  const numberSort = Math.round(Math.random() * 5)
+  return func(number, numberSort) ? 'Parabéns você ganhou' : 'Tente novamente';
+}
+
+console.log(sorteio(2, oMesmo));
