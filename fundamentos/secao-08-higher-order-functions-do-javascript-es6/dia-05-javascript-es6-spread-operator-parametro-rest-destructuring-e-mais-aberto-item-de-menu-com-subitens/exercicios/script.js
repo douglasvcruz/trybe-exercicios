@@ -35,3 +35,4 @@ const personLikes = ({ name, age, likes }) => `${name} is ${age} years old and l
 // Retornos esperados:
 console.log(personLikes(alex)); // 'Alex is 26 years old and likes fly fishing.'
 console.log(personLikes(gunnar)); // 'Gunnar is 30 years old and likes hiking, scuba diving, taking pictures.'
+
