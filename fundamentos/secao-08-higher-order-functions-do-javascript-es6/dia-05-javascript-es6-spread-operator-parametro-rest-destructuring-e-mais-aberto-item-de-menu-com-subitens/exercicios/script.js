@@ -108,3 +108,9 @@ const shipLength = ({ name, length, measurementUnit}) => `${name} is ${length} $
 console.log(shipLength(ships[0])); // 'Titanic is 269.1 meters long'
 console.log(shipLength(ships[1])); // 'Queen Mary 2 is 1132 feet long'
 console.log(shipLength(ships[2])); // 'Yamato is 256 meters long'
+
+const greet = (a, b = 'Hi') => `${b} ${a}`;
+
+console.log(greet('John'));
+console.log(greet('John', 'Good morning'));
+console.log(greet('Isabela', 'Oi'));
