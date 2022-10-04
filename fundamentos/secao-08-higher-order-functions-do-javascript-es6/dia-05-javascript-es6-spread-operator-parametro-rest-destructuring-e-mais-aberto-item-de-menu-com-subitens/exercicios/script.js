@@ -68,3 +68,8 @@ const filterPeople = () => people.filter(({ nationality, bornIn }) => nationalit
 
 console.log(filterPeople())
 
+const myList = [5, 2, 3];
+
+const swap = ([a, b, c]) => [c, b, a];
+
+console.log(swap(myList));
