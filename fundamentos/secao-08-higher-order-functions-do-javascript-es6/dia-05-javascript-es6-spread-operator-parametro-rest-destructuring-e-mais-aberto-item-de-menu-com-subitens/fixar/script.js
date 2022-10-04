@@ -14,7 +14,7 @@ console.log(fruitSalad(specialFruit, additionalItens));
 const user = {
   name: 'Maria',
   age: 21,
-  nationality: 'Brazilian',
+  nationality1: 'Brazilian',
 };
 
 const jobInfos = {
@@ -29,6 +29,22 @@ const userInfos = {
   ...jobInfos,
 };
 
-const { name, age, nationality, profession, squad, squadInitials } = userInfos;
+const { name, age, nationality1, profession, squad, squadInitials } = userInfos;
 
-console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
+console.log(`Hi, my name is ${name}, I'm ${age} years old and I'm ${nationality1}. I work as a ${profession} and my squad is ${squadInitials}-${squad}`);
+
+const getNationality = ({ firstName, nationality = 'Brazilian' }) => `${firstName} is ${nationality}`;
+
+const person = {
+  firstName: 'João',
+  lastName: 'Jr II',
+};
+
+const otherPerson = {
+  firstName: 'Ivan',
+  lastName: 'Ivanovich',
+  nationality: 'Russian',
+};
+
+console.log(getNationality(otherPerson)); // Ivan is Russian
+console.log(getNationality(person));
