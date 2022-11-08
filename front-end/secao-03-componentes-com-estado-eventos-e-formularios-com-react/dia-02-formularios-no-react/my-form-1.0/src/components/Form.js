@@ -43,7 +43,7 @@ class Form extends Component {
     return (
       <div>
         <form>
-        <Text name={ name } handleChange={ this.handleChange } />
+        <Text name={ name } handleChange={this.handleChange} />
         <Email email={ email } handleChange={this.handleChange} />
         <fieldset>
             <textarea
