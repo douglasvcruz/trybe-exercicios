@@ -23,14 +23,23 @@ const readFile = async () => {
 
 // main();
 
+app.get("/movies", async (req, res) => {
+  try {
+    const movies = await readFile();
+    res.status(200).json({ movies });
+  } catch (err) {
+    res.status(500).send({ message: err.message });
+  }
+});
+
 app.get("/movies/:id", async (req, res) => {
   try {
     const { id } = req.params;
     const movies = await readFile();
-    const movieFind = movies.find((a) =>  a.id === Number(id))
+    const movieFind = movies.find((a) => a.id === Number(id));
     res.status(200).json(movieFind);
   } catch (err) {
-    res.status(500).send({ message: err.message })
+    res.status(500).send({ message: err.message });
   }
 });
 
