@@ -20,11 +20,6 @@
     "price": 5
   },
   {
-    "id": 5,
-    "movie": "Olá amigo",
-    "price": "1000"
-  },
-  {
     "id": 6,
     "movie": "Os Fantasmas se Divertem",
     "price": 2
