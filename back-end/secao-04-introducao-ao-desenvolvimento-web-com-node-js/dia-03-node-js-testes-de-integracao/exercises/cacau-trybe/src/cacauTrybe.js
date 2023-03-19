@@ -29,8 +29,44 @@ const getChocolatesByBrand = async (brandId) => {
     .filter((chocolate) => chocolate.brandId === brandId);
 };
 
+const filterChocolateByName = async (query) => {
+  const cacauTrybe = await readFile();
+  return cacauTrybe.chocolates
+    .filter((chocolate) => chocolate.name.toLowerCase().includes(query.toLowerCase()));
+};
+
+const writeFile = async (content) => {
+  try {
+    await fs.writeFile(chocolatesPath, JSON.stringify(content));
+  } catch (err) {
+    console.error('Erro ao salvar o arquivo', err.message);
+    return null;
+  }
+}
+
+const updateChocolate = async (id, update) => {
+  const cacauTrybe = await readFile();
+  const chocolateToUpdate = cacauTrybe.chocolates.find(
+    (chocolate) => chocolate.id === id,
+  );
+
+  if (chocolateToUpdate) {
+    cacauTrybe.chocolates = cacauTrybe.chocolates.map((chocolate) => {
+        if (chocolate.id === id) return { ...chocolate, ...update };
+        return chocolate;
+      });
+
+    await writeFile(cacauTrybe);
+    return { ...chocolateToUpdate, ...update };
+  }
+
+  return false;
+};
+
 module.exports = {
   getAllChocolates,
   getChocolateById,
-  getChocolatesByBrand
+  getChocolatesByBrand,
+  filterChocolateByName,
+  updateChocolate
 };
