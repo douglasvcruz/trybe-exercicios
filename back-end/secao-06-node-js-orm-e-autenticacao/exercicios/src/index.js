@@ -1,7 +1,7 @@
 require('express-async-errors');
 const express = require('express');
 const BooksController = require('./controllers/book.controller');
-const { validateBookExist } = require('./middlewares/validateBook')
+const { validateBookExist, validateUpdate } = require('./middlewares/validateBook')
 const errorHandler = require('./middlewares/errorHandler');
 const app = express();
 const PORT = process.env.PORT || 3000;
@@ -13,6 +13,8 @@ app.get('/books', BooksController.getAll);
 app.get('/books/:id', validateBookExist, BooksController.getById);
 
 app.post('/books', BooksController.createBook);
+
+app.put('/books/:id', validateUpdate, BooksController.updateBook);
 
 app.use(errorHandler);
 

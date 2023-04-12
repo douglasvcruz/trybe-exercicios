@@ -19,7 +19,7 @@ const createBook = async (title, author, pageQuantity) => {
 };
 
 const updateBook = async (id, { title, author, pageQuantity }) => {
-  const [updatedBook] = await User.update(
+  const [updatedBook] = await Book.update(
     {
       title,
       author,
