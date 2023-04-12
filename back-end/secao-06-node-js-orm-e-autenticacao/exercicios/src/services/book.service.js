@@ -25,7 +25,9 @@ const updateBook = async (id, { title, author, pageQuantity }) => {
       author,
       pageQuantity
     },
-    { where: { id } },
+    {
+      where: { id }
+    },
   );
 
   return updatedBook;
