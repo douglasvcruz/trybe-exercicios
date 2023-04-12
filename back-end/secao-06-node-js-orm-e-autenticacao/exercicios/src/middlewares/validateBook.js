@@ -9,7 +9,17 @@ const validateBookExist = async (req, _res, next) => {
   }
   next();
 };
+const validateUpdate = async (req, _res, next) => {
+  const { id } = req.params;
+  const { title, author, pageQuantity } = req.body;
+  const updatedBook = await BooksService.updateBook(id, { title, author, pageQuantity });
+  if (!updatedBook) {
+    throw httpErrGenerator(404, 'Book not found');
+  }
+  next();
+};
 
 module.exports = {
   validateBookExist,
+  validateUpdate,
 };
