@@ -9,6 +9,7 @@ const validateBookExist = async (req, _res, next) => {
   }
   next();
 };
+
 const validateUpdate = async (req, _res, next) => {
   const { id } = req.params;
   const { title, author, pageQuantity } = req.body;
@@ -19,7 +20,17 @@ const validateUpdate = async (req, _res, next) => {
   next();
 };
 
+const validateDelete = async (req, _res, next) => {
+  const { id } = req.params;
+  const removed = await BooksService.deleteBook(id);
+  if (!removed) {
+    throw httpErrGenerator(404, 'Book not found');
+  }
+  next();
+};
+
 module.exports = {
   validateBookExist,
   validateUpdate,
+  validateDelete,
 };
