@@ -18,19 +18,21 @@ const createBook = async (title, author, pageQuantity) => {
   return newBook;
 };
 
-const updateBook = async (id, { title, author, pageQuantity }) => {
+const updateBook = async (id, body) => {
   const [updatedBook] = await Book.update(
-    {
-      title,
-      author,
-      pageQuantity
-    },
-    {
-      where: { id }
-    },
+    { ...body },
+    { where: { id } },
   );
 
   return updatedBook;
+};
+
+const deleteBook = async (id) => {
+  const book = await Book.destroy(
+    { where: { id } },
+  );
+
+  return book;
 };
 
 module.exports = {
@@ -38,4 +40,5 @@ module.exports = {
   getById,
   createBook,
   updateBook,
+  deleteBook,
 };
