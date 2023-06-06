@@ -7,3 +7,15 @@ def count_numbers(n):
 
 
 print(count_numbers(10))
+
+
+def count_numbers2(n):
+    if n == 1:
+        return 0
+    elif n % 2 == 0:
+        return 1 + count_numbers2(n - 1)
+    else:
+        return count_numbers2(n - 1)
+
+
+print(count_numbers2(6))
