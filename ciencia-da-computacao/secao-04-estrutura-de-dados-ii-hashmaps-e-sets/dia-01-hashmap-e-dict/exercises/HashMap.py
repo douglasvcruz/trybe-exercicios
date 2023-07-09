@@ -20,6 +20,7 @@ class HashMap:
         address = self.get_address(id_num)
         return self._buckets[address] is not None
 
-    def update_value(self, id_num, new_name):
+    def update_value(self, id_num, new_value):
         address = self.get_address(id_num)
-        self._buckets[address].name = new_name
+        employee = self._buckets[address]
+        employee[0].name = new_value

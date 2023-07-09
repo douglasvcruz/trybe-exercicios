@@ -1,13 +1,14 @@
 from Employee import Employee
 from HashMap import HashMap
 
-employees = [(14, "name1"), (23, "name2"), (10, "name3"), (9, "name4")]
-registry = HashMap()
+if __name__ == "__main__":
+    employees = [(14, 'name1'), (23, 'name2'), (10, 'name3'), (9, 'name4')]
+    registry = HashMap()
 
-for first, second in employees:
-    employee = Employee(first, second)
-    registry.insert(employee)
+    for id_num, name in employees:
+        employee = Employee(id_num, name)
+        registry.insert(employee)
 
-registry.get_value(23)
-registry.update_value(23, "name30")
-registry.get_value(23)
+    print(registry.get_value(23))
+    registry.update_value(10, "name30")
+    print(registry.get_value(10))
