@@ -1,0 +1,10 @@
+is_global = true
+build_property.TargetFramework = net6.0
+build_property.TargetPlatformMinVersion = 
+build_property.UsingMicrosoftNETSdkWeb = 
+build_property.ProjectTypeGuids = 
+build_property.InvariantGlobalization = 
+build_property.PlatformNeutralAssembly = 
+build_property._SupportedPlatformList = Linux,macOS,Windows
+build_property.RootNamespace = HelloWorld
+build_property.ProjectDir = /home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/

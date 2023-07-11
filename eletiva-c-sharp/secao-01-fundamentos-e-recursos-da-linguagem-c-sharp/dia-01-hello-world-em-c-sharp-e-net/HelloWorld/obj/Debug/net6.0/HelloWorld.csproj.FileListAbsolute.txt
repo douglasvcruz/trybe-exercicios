@@ -1,0 +1,15 @@
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/bin/Debug/net6.0/HelloWorld
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/bin/Debug/net6.0/HelloWorld.deps.json
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/bin/Debug/net6.0/HelloWorld.runtimeconfig.json
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/bin/Debug/net6.0/HelloWorld.dll
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/bin/Debug/net6.0/HelloWorld.pdb
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.AssemblyReference.cache
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.GeneratedMSBuildEditorConfig.editorconfig
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.AssemblyInfoInputs.cache
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.AssemblyInfo.cs
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.csproj.CoreCompileInputs.cache
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.dll
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/refint/HelloWorld.dll
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.pdb
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/HelloWorld.genruntimeconfig.cache
+/home/doug/Trybe/trybe-exercicios/eletiva-c-sharp/secao-01-fundamentos-e-recursos-da-linguagem-c-sharp/dia-01-hello-world-em-c-sharp-e-net/HelloWorld/obj/Debug/net6.0/ref/HelloWorld.dll
